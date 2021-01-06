@@ -1,0 +1,87 @@
+html {
+scroll-behavior: smooth;
+}
+* {
+box-sizing: border-box;
+}
+a {
+text-decoration: none;
+display: inline-block;
+}
+ul,
+li {
+list-style: none;
+margin: 0;
+padding: 0;
+}
+.container {
+max-width: 1030px;
+margin: 0 auto;
+padding: 0px 15px;
+}
+
+.main__btn{
+   background: lightcoral;
+   border: 1px solid lightcoral;
+   border-radius: 20px;
+   height: 30px;
+   outline: none;
+   cursor: pointer;
+   color: white;
+   padding: 0px 20px;
+}
+.main__btn:hover{
+   background: rgb(235, 119, 119);
+}
+
+.modal{
+   display: none;
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   z-index: 9;
+   background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal__inner{
+   position: fixed;
+   left: 40%;
+   top: 20%;
+   height: 200px;
+   width: 300px;
+   background: white;
+   border: 1px solid white;
+   border-radius: 10px;
+   text-align: center;
+}
+
+.modal__img{
+   width: 100px;
+   height: 100px;
+   margin: 20px auto;
+}
+
+.modal__close{
+   font-size: 30px;
+   cursor: pointer;
+   width: 30px;
+   height: 30px;
+   position: absolute;
+   right: 5px;
+}
+
+@keyframes fade {
+   from {
+      opacity: 0.1;
+   }
+   to{
+      opacity: 1;
+   }
+}
+
+.fade {
+   animation-name: fade;
+   animation-duration: 1s;
+}
