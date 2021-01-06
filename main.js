@@ -3,10 +3,10 @@ window.addEventListener('DOMContentLoaded', () => {
 });
 
 function modal(){
-   function bindModal(triggerSelector, modalSelector, CloseSelector){
+   function bindModal(triggerSelector, modalSelector, closeSelector){
       const trigger = document.querySelectorAll(triggerSelector),
             modal = document.querySelector(modalSelector),
-            close = document.querySelector(CloseSelector);
+            close = document.querySelector(closeSelector);
 
       trigger.forEach(item => {
          item.addEventListener('click', (e) => {
